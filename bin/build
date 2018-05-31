@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -o nounset
+set -o errexit
+
+node_modules/.bin/webpack --output-library-target window --output-filename faultfixers-js-lib.browser-min.js
+node_modules/.bin/webpack --output-library-target commonjs2 --output-filename faultfixers-js-lib.commonjs2.js
