@@ -13,6 +13,8 @@ function getTicketCommentVisibilityDescription(ticket, commentVisibility) {
                 return 'Private comment';
             }
             break;
+        case 'INTERNAL_TO_TEAM':
+            return 'Internal comment (visible to your team)';
         default:
             throw new Error('Unsupported comment visibility: ' + commentVisibility);
     }

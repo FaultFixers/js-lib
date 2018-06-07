@@ -20,6 +20,10 @@ describe('hasAnyTicketUpdatePermission', function() {
         expectTrue('UPDATE_TICKETS_PRIVATE_TO_REPORTER_COMMENT');
     });
 
+    it('if should return true for UPDATE_TICKETS_INTERNAL_TO_TEAM_COMMENT', function() {
+        expectTrue('UPDATE_TICKETS_INTERNAL_TO_TEAM_COMMENT');
+    });
+
     it('if should return true for UPDATE_TICKETS_STATUS', function() {
         expectTrue('UPDATE_TICKETS_STATUS');
     });

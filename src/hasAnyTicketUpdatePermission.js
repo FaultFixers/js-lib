@@ -5,6 +5,7 @@ function hasAnyTicketUpdatePermission(permissions) {
 
     return permissions.indexOf('UPDATE_TICKETS_PUBLIC_COMMENT') !== -1 ||
         permissions.indexOf('UPDATE_TICKETS_PRIVATE_TO_REPORTER_COMMENT') !== -1 ||
+        permissions.indexOf('UPDATE_TICKETS_INTERNAL_TO_TEAM_COMMENT') !== -1 ||
         permissions.indexOf('UPDATE_TICKETS_STATUS') !== -1;
 }
 
