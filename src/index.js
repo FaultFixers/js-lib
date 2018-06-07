@@ -1,13 +1,15 @@
+import coreColors from './coreColors';
+import formatQuestionLabel from './formatQuestionLabel';
+import getAvailableCommentVisibilities from './getAvailableCommentVisibilities';
 import getTicketCommentVisibilityDescription from './getTicketCommentVisibilityDescription';
 import hasAnyTicketUpdatePermission from './hasAnyTicketUpdatePermission';
-import formatQuestionLabel from './formatQuestionLabel';
-import coreColors from './coreColors';
 import toTitleCase from './toTitleCase';
 
 export {
+    coreColors,
+    formatQuestionLabel,
+    getAvailableCommentVisibilities,
     getTicketCommentVisibilityDescription,
     hasAnyTicketUpdatePermission,
-    formatQuestionLabel,
-    coreColors,
     toTitleCase,
 };
