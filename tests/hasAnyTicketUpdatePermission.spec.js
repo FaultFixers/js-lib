@@ -28,6 +28,10 @@ describe('hasAnyTicketUpdatePermission', function() {
         expectTrue('UPDATE_TICKETS_STATUS');
     });
 
+    it('if should return true for UPDATE_TICKETS_INTERNAL_ACTION', function() {
+        expectTrue('UPDATE_TICKETS_INTERNAL_ACTION');
+    });
+
     it('if should return false for other permissions', function() {
         expectFalse('VIEW_ACCOUNTS');
         expectFalse('VIEW_ACCOUNTS', 'UPDATE_ACCOUNTS');
