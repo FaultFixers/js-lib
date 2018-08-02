@@ -1,7 +1,9 @@
 {
   "name": "faultfixers-js-lib",
-  "version": "0.0.13",
-  "dependencies": {},
+  "version": "0.0.14",
+  "dependencies": {
+    "values.js": "^1.0.3"
+  },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
