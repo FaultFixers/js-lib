@@ -1,4 +1,7 @@
 import coreColors from './coreColors';
+import formatLocalDate from './formatLocalDate';
+import formatLocalDateTime from './formatLocalDateTime';
+import formatLocalTime from './formatLocalTime';
 import formatQuestionLabel from './formatQuestionLabel';
 import formatShortVisibility from './formatShortVisibility';
 import getAvailableCommentVisibilities from './getAvailableCommentVisibilities';
@@ -12,6 +15,9 @@ import toTitleCase from './toTitleCase';
 
 export {
     coreColors,
+    formatLocalDate,
+    formatLocalDateTime,
+    formatLocalTime,
     formatQuestionLabel,
     formatShortVisibility,
     getAvailableCommentVisibilities,
