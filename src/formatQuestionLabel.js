@@ -10,6 +10,8 @@ function formatQuestionLabel(label) {
 
     if (label.indexOf('?') === label.length - 1) {
         return label;
+    } else if (label.indexOf(':') === label.length - 1) {
+        return label;
     } else {
         return label + ':';
     }
