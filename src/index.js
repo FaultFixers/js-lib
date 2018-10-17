@@ -4,6 +4,7 @@ import formatLocalDateTime from './formatLocalDateTime';
 import formatLocalTime from './formatLocalTime';
 import formatQuestionLabel from './formatQuestionLabel';
 import formatShortVisibility from './formatShortVisibility';
+import formatTicketPriority from './formatTicketPriority';
 import getAvailableCommentVisibilities from './getAvailableCommentVisibilities';
 import getShade from './getShade';
 import getShortUserDescription from './getShortUserDescription';
@@ -20,6 +21,7 @@ export {
     formatLocalTime,
     formatQuestionLabel,
     formatShortVisibility,
+    formatTicketPriority,
     getAvailableCommentVisibilities,
     getShade,
     getShortUserDescription,
