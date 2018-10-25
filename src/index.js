@@ -12,6 +12,7 @@ import getTicketCommentVisibilityDescription from './getTicketCommentVisibilityD
 import getTint from './getTint';
 import getUserDescription from './getUserDescription';
 import hasAnyTicketUpdatePermission from './hasAnyTicketUpdatePermission';
+import paragraphs from './paragraphs';
 import toTitleCase from './toTitleCase';
 
 export {
@@ -29,5 +30,6 @@ export {
     getTint,
     getUserDescription,
     hasAnyTicketUpdatePermission,
+    paragraphs,
     toTitleCase,
 };
