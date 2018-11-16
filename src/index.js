@@ -1,3 +1,4 @@
+import conjoinWithCommasAndWord from './conjoinWithCommasAndWord';
 import coreColors from './coreColors';
 import formatLocalDate from './formatLocalDate';
 import formatLocalDateTime from './formatLocalDateTime';
@@ -16,6 +17,7 @@ import paragraphs from './paragraphs';
 import toTitleCase from './toTitleCase';
 
 export {
+    conjoinWithCommasAndWord,
     coreColors,
     formatLocalDate,
     formatLocalDateTime,
