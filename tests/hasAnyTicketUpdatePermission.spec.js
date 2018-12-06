@@ -32,6 +32,10 @@ describe('hasAnyTicketUpdatePermission', function() {
         expectTrue('UPDATE_TICKETS_INTERNAL_ACTION');
     });
 
+    it('if should return true for DELETE_TICKETS', function() {
+        expectTrue('DELETE_TICKETS');
+    });
+
     it('if should return true for ASSIGN_TICKETS', function() {
         expectTrue('ASSIGN_TICKETS');
     });
