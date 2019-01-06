@@ -2,8 +2,6 @@ const chai = require('chai');
 const expect = chai.expect;
 
 const method = require('../dist/test-bundle.js').formatLocalDateTime;
-const LocalDate = require('local-date-time').LocalDate;
-const LocalTime = require('local-date-time').LocalTime;
 
 describe('formatLocalDateTime', function() {
     function expectResult(date, time, output) {

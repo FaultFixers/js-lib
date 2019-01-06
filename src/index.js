@@ -37,5 +37,5 @@ export {
     getUserDescription,
     hasAnyTicketUpdatePermission,
     paragraphs,
-    toTitleCase,
+    toTitleCase
 };

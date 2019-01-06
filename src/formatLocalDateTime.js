@@ -1,4 +1,3 @@
-import {LocalDate, LocalTime} from 'local-date-time';
 import formatLocalDate from './formatLocalDate.js';
 import formatLocalTime from './formatLocalTime.js';
 
