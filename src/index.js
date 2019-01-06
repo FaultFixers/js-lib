@@ -1,5 +1,6 @@
 import conjoinWithCommasAndWord from './conjoinWithCommasAndWord';
 import coreColors from './coreColors';
+import fillInFormFieldDefaults from './fillInFormFieldDefaults';
 import formatFormInstanceStatus from './formatFormInstanceStatus';
 import formatFormTemplateStatus from './formatFormTemplateStatus';
 import formatLocalDate from './formatLocalDate';
@@ -21,6 +22,7 @@ import toTitleCase from './toTitleCase';
 export {
     conjoinWithCommasAndWord,
     coreColors,
+    fillInFormFieldDefaults,
     formatFormInstanceStatus,
     formatFormTemplateStatus,
     formatLocalDate,
