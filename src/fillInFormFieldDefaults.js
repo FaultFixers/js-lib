@@ -41,6 +41,9 @@ function fillInFormFieldDefaults(fields) {
             case 'TIME':
                 field.value = field.defaultToNow ? LocalTime.now() : null;
                 break;
+            case 'IMAGES':
+                field.images = [];
+                break;
             case 'DROPDOWN':
             case 'HELP_TEXT':
             case 'SIGNATURE':

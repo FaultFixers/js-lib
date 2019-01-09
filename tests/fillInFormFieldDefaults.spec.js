@@ -149,6 +149,19 @@ describe('fillInFormFieldDefaults', function() {
         expectNoChange(fields);
     });
 
+    it('for an IMAGES field', function() {
+        const fields = [
+            {type: 'IMAGES'},
+        ];
+
+        expectResult(fields, [
+            {
+                type: 'IMAGES',
+                images: []
+            },
+        ]);
+    });
+
     it('for a SIGNATURE field', function() {
         const fields = [
             {type: 'SIGNATURE'},
