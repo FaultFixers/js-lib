@@ -18,6 +18,7 @@ import getUserDescription from './getUserDescription';
 import hasAnyTicketUpdatePermission from './hasAnyTicketUpdatePermission';
 import paragraphs from './paragraphs';
 import toTitleCase from './toTitleCase';
+import transformFormFieldsForSaving from './transformFormFieldsForSaving';
 
 export {
     conjoinWithCommasAndWord,
@@ -39,5 +40,6 @@ export {
     getUserDescription,
     hasAnyTicketUpdatePermission,
     paragraphs,
-    toTitleCase
+    toTitleCase,
+    transformFormFieldsForSaving
 };
