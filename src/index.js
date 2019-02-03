@@ -19,6 +19,7 @@ import hasAnyTicketUpdatePermission from './hasAnyTicketUpdatePermission';
 import paragraphs from './paragraphs';
 import toTitleCase from './toTitleCase';
 import transformFormFieldsForSaving from './transformFormFieldsForSaving';
+import validateFormFields from './validateFormFields';
 
 export {
     conjoinWithCommasAndWord,
@@ -41,5 +42,6 @@ export {
     hasAnyTicketUpdatePermission,
     paragraphs,
     toTitleCase,
-    transformFormFieldsForSaving
+    transformFormFieldsForSaving,
+    validateFormFields
 };
