@@ -6,6 +6,10 @@
  * Converts image objects to IDs.
  */
 function transformFormFieldsForSaving(fields) {
+    if (!(fields instanceof Array)) {
+        throw new Error('Fields must be an array, got: ' + fields);
+    }
+
     for (let i = 0; i < fields.length; i++) {
         const field = fields[i];
         switch (field.type) {
