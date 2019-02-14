@@ -9,6 +9,7 @@ import formatLocalTime from './formatLocalTime';
 import formatQuestionLabel from './formatQuestionLabel';
 import formatShortVisibility from './formatShortVisibility';
 import formatTicketPriority from './formatTicketPriority';
+import formatUserStatus from './formatUserStatus';
 import getShade from './getShade';
 import getShortUserDescription from './getShortUserDescription';
 import getTicketCommentVisibilityDescription from './getTicketCommentVisibilityDescription';
@@ -32,6 +33,7 @@ export {
     formatQuestionLabel,
     formatShortVisibility,
     formatTicketPriority,
+    formatUserStatus,
     getShade,
     getShortUserDescription,
     getTicketCommentVisibilityDescription,
