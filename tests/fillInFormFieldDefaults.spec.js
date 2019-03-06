@@ -33,7 +33,7 @@ describe('fillInFormFieldDefaults', function() {
 
         expectResult(fields, [
             {type: 'DATE', defaultToToday: false, value: null},
-            {type: 'DATE', defaultToToday: true, value: LocalDate.today()},
+            {type: 'DATE', defaultToToday: true, value: LocalDate.today().toString()},
         ]);
     });
 
@@ -45,7 +45,7 @@ describe('fillInFormFieldDefaults', function() {
 
         expectResult(fields, [
             {type: 'DATE_TIME', defaultToNow: false},
-            {type: 'DATE_TIME', defaultToNow: true, date: LocalDate.today(), time: LocalTime.now()},
+            {type: 'DATE_TIME', defaultToNow: true, date: LocalDate.today().toString(), time: LocalTime.now().toString()},
         ]);
     });
 
@@ -190,7 +190,7 @@ describe('fillInFormFieldDefaults', function() {
 
         expectResult(fields, [
             {type: 'TIME', defaultToNow: false, value: null},
-            {type: 'TIME', defaultToNow: true, value: LocalTime.now()},
+            {type: 'TIME', defaultToNow: true, value: LocalTime.now().toString()},
         ]);
     });
 

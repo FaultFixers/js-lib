@@ -11,12 +11,12 @@ function fillInFormFieldDefaults(fields) {
                 field.value = !!field.defaultValue;
                 break;
             case 'DATE':
-                field.value = field.defaultToToday ? LocalDate.today() : null;
+                field.value = field.defaultToToday ? LocalDate.today().toString() : null;
                 break;
             case 'DATE_TIME':
                 if (field.defaultToNow) {
-                    field.date = LocalDate.today();
-                    field.time = LocalTime.now();
+                    field.date = LocalDate.today().toString();
+                    field.time = LocalTime.now().toString();
                 }
                 break;
             case 'FIELDSET':
@@ -39,7 +39,7 @@ function fillInFormFieldDefaults(fields) {
                 field.value = field.defaultValue ? field.defaultValue : null;
                 break;
             case 'TIME':
-                field.value = field.defaultToNow ? LocalTime.now() : null;
+                field.value = field.defaultToNow ? LocalTime.now().toString() : null;
                 break;
             case 'IMAGES':
                 field.images = [];
