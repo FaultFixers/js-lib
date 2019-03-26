@@ -1,6 +1,8 @@
 import conjoinWithCommasAndWord from './conjoinWithCommasAndWord';
 import coreColors from './coreColors';
 import fillInFormFieldDefaults from './fillInFormFieldDefaults';
+import formatAssetStatus from './formatAssetStatus';
+import formatAssetWarrantyStatus from './formatAssetWarrantyStatus';
 import formatFormInstanceStatus from './formatFormInstanceStatus';
 import formatFormTemplateStatus from './formatFormTemplateStatus';
 import formatLocalDate from './formatLocalDate';
@@ -25,6 +27,8 @@ export {
     conjoinWithCommasAndWord,
     coreColors,
     fillInFormFieldDefaults,
+    formatAssetStatus,
+    formatAssetWarrantyStatus,
     formatFormInstanceStatus,
     formatFormTemplateStatus,
     formatLocalDate,

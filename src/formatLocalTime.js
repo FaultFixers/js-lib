@@ -39,4 +39,3 @@ function formatLocalTime(localTime) {
 }
 
 export default formatLocalTime;
-

@@ -13,4 +13,3 @@ function formatLocalDate(localDate, includeYear = true) {
 }
 
 export default formatLocalDate;
-
