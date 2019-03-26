@@ -45,6 +45,36 @@ const money = {
             throw new Error('Amount given must pass isValidLocalAmountToSendToApi() but does not: ' + amount);
         }
     },
+
+    /**
+     * @param {String} currency For example GBP.
+     * @param {Number} amount For example 100 (for 100 pence).
+     * @return {String} For example £1. Any trailing '.00' is removed.
+     */
+    format(currency, amount) {
+        if (typeof currency !== 'string' || currency.length !== 3) {
+            throw new Error('Currency must be a 3-letter code, but got: ' + currency);
+        }
+        if (!money.isValidAmountFromApi(amount)) {
+            throw new Error('Amount given must pass isValidAmountFromApi() but does not: ' + amount);
+        }
+
+        const bigDenominator = money.convertApiValueToBigDenominator(amount).toFixed(2).replace('.00', '');
+        switch (currency) {
+            case 'GBP':
+                return '£' + bigDenominator;
+            case 'USD':
+                return '$' + bigDenominator;
+            case 'EUR':
+                return '€' + bigDenominator;
+            case 'INR':
+                return '₹' + bigDenominator;
+            case 'TZS':
+                return bigDenominator + ' TSh';
+            default:
+                throw new Error('Unsupported currency: ' + currency);
+        }
+    },
 };
 
 export default money;

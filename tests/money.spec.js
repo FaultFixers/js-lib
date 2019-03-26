@@ -161,4 +161,129 @@ describe('money', function() {
             expectToThrow(false);
         });
     });
+
+    describe('format', function() {
+        function expectResult(currency, amount, output) {
+            expect(money.format(currency, amount)).to.eq(output);
+        }
+
+        it('should format GBP (British pound sterling)', function() {
+            expectResult('GBP', 0, '£0');
+            expectResult('GBP', '0', '£0');
+            expectResult('GBP', 1, '£0.01');
+            expectResult('GBP', '1', '£0.01');
+            expectResult('GBP', 50, '£0.50');
+            expectResult('GBP', '50', '£0.50');
+            expectResult('GBP', 100, '£1');
+            expectResult('GBP', '100', '£1');
+            expectResult('GBP', 2133, '£21.33');
+            expectResult('GBP', '2133', '£21.33');
+            expectResult('GBP', 10005, '£100.05');
+            expectResult('GBP', '10005', '£100.05');
+            expectResult('GBP', 200000, '£2000');
+        });
+
+        it('should format USD (US dollars)', function() {
+            expectResult('USD', 0, '$0');
+            expectResult('USD', '0', '$0');
+            expectResult('USD', 1, '$0.01');
+            expectResult('USD', '1', '$0.01');
+            expectResult('USD', 50, '$0.50');
+            expectResult('USD', '50', '$0.50');
+            expectResult('USD', 100, '$1');
+            expectResult('USD', '100', '$1');
+            expectResult('USD', 2133, '$21.33');
+            expectResult('USD', '2133', '$21.33');
+            expectResult('USD', 10005, '$100.05');
+            expectResult('USD', '10005', '$100.05');
+            expectResult('USD', 200000, '$2000');
+        });
+
+        it('should format EUR (euros)', function() {
+            expectResult('EUR', 0, '€0');
+            expectResult('EUR', '0', '€0');
+            expectResult('EUR', 1, '€0.01');
+            expectResult('EUR', '1', '€0.01');
+            expectResult('EUR', 50, '€0.50');
+            expectResult('EUR', '50', '€0.50');
+            expectResult('EUR', 100, '€1');
+            expectResult('EUR', '100', '€1');
+            expectResult('EUR', 2133, '€21.33');
+            expectResult('EUR', '2133', '€21.33');
+            expectResult('EUR', 10005, '€100.05');
+            expectResult('EUR', '10005', '€100.05');
+            expectResult('EUR', 200000, '€2000');
+        });
+
+        it('should format INR (Indian rupees)', function() {
+            expectResult('INR', 0, '₹0');
+            expectResult('INR', '0', '₹0');
+            expectResult('INR', 1, '₹0.01');
+            expectResult('INR', '1', '₹0.01');
+            expectResult('INR', 50, '₹0.50');
+            expectResult('INR', '50', '₹0.50');
+            expectResult('INR', 100, '₹1');
+            expectResult('INR', '100', '₹1');
+            expectResult('INR', 2133, '₹21.33');
+            expectResult('INR', '2133', '₹21.33');
+            expectResult('INR', 10005, '₹100.05');
+            expectResult('INR', '10005', '₹100.05');
+            expectResult('INR', 200000, '₹2000');
+        });
+
+        it('should format TZS (Tanzanian shillings)', function() {
+            expectResult('TZS', 0, '0 TSh');
+            expectResult('TZS', '0', '0 TSh');
+            expectResult('TZS', 1, '0.01 TSh');
+            expectResult('TZS', '1', '0.01 TSh');
+            expectResult('TZS', 50, '0.50 TSh');
+            expectResult('TZS', '50', '0.50 TSh');
+            expectResult('TZS', 100, '1 TSh');
+            expectResult('TZS', '100', '1 TSh');
+            expectResult('TZS', 2133, '21.33 TSh');
+            expectResult('TZS', '2133', '21.33 TSh');
+            expectResult('TZS', 10005, '100.05 TSh');
+            expectResult('TZS', '10005', '100.05 TSh');
+            expectResult('TZS', 200000, '2000 TSh');
+        });
+
+        it('should throw if given an invalid currency format', function() {
+            function expectCurrencyToThrow(currency) {
+                expect(() => money.format(currency, 100))
+                    .to.throw('Currency must be a 3-letter code, but got: ' + currency);
+            }
+
+            expectCurrencyToThrow('AB');
+            expectCurrencyToThrow('ABCD');
+            expectCurrencyToThrow('10');
+            expectCurrencyToThrow(10);
+            expectCurrencyToThrow(null);
+            expectCurrencyToThrow(undefined);
+            expectCurrencyToThrow({});
+            expectCurrencyToThrow([]);
+            expectCurrencyToThrow(true);
+            expectCurrencyToThrow(false);
+        });
+
+        it('should throw if given an unsupported currency', function() {
+            expect(() => money.format('ZZZ', 100))
+                .to.throw('Unsupported currency: ZZZ');
+        });
+
+        it('should throw if given an invalid amount', function() {
+            function expectAmountToThrow(amount) {
+                expect(() => money.format('GBP', amount))
+                    .to.throw('Amount given must pass isValidAmountFromApi() but does not: ' + amount);
+            }
+
+            expectAmountToThrow('0.123456');
+            expectAmountToThrow('12.3412');
+            expectAmountToThrow(null);
+            expectAmountToThrow(undefined);
+            expectAmountToThrow({});
+            expectAmountToThrow([]);
+            expectAmountToThrow(true);
+            expectAmountToThrow(false);
+        });
+    });
 });
