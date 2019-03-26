@@ -18,6 +18,7 @@ import getTicketCommentVisibilityDescription from './getTicketCommentVisibilityD
 import getTint from './getTint';
 import getUserDescription from './getUserDescription';
 import hasAnyTicketUpdatePermission from './hasAnyTicketUpdatePermission';
+import money from './money';
 import paragraphs from './paragraphs';
 import toTitleCase from './toTitleCase';
 import transformFormFieldsForSaving from './transformFormFieldsForSaving';
@@ -44,6 +45,7 @@ export {
     getTint,
     getUserDescription,
     hasAnyTicketUpdatePermission,
+    money,
     paragraphs,
     toTitleCase,
     transformFormFieldsForSaving,
