@@ -8,6 +8,7 @@ import formatFormTemplateStatus from './formatFormTemplateStatus';
 import formatLocalDate from './formatLocalDate';
 import formatLocalDateTime from './formatLocalDateTime';
 import formatLocalTime from './formatLocalTime';
+import formatNumberOfMonths from './formatNumberOfMonths';
 import formatQuestionLabel from './formatQuestionLabel';
 import formatShortVisibility from './formatShortVisibility';
 import formatTicketPriority from './formatTicketPriority';
@@ -35,6 +36,7 @@ export {
     formatLocalDate,
     formatLocalDateTime,
     formatLocalTime,
+    formatNumberOfMonths,
     formatQuestionLabel,
     formatShortVisibility,
     formatTicketPriority,
