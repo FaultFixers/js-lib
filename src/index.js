@@ -3,6 +3,7 @@ import coreColors from './coreColors';
 import fillInFormFieldDefaults from './fillInFormFieldDefaults';
 import formatAssetStatus from './formatAssetStatus';
 import formatAssetWarrantyStatus from './formatAssetWarrantyStatus';
+import formatDueRange from './formatDueRange';
 import formatFormInstanceStatus from './formatFormInstanceStatus';
 import formatFormTemplateStatus from './formatFormTemplateStatus';
 import formatLocalDate from './formatLocalDate';
@@ -31,6 +32,7 @@ export {
     fillInFormFieldDefaults,
     formatAssetStatus,
     formatAssetWarrantyStatus,
+    formatDueRange,
     formatFormInstanceStatus,
     formatFormTemplateStatus,
     formatLocalDate,
