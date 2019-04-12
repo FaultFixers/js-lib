@@ -12,6 +12,7 @@ import formatLocalTime from './formatLocalTime';
 import formatNumberOfMonths from './formatNumberOfMonths';
 import formatQuestionLabel from './formatQuestionLabel';
 import formatShortVisibility from './formatShortVisibility';
+import formatTicketDueRange from './formatTicketDueRange';
 import formatTicketPriority from './formatTicketPriority';
 import formatUserStatus from './formatUserStatus';
 import getShade from './getShade';
@@ -41,6 +42,7 @@ export {
     formatNumberOfMonths,
     formatQuestionLabel,
     formatShortVisibility,
+    formatTicketDueRange,
     formatTicketPriority,
     formatUserStatus,
     getShade,
