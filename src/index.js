@@ -14,6 +14,8 @@ import formatQuestionLabel from './formatQuestionLabel';
 import formatShortVisibility from './formatShortVisibility';
 import formatTicketDueRange from './formatTicketDueRange';
 import formatTicketPriority from './formatTicketPriority';
+import formatTicketUpdateNewDueRange from './formatTicketUpdateNewDueRange';
+import formatTicketUpdateOldDueRange from './formatTicketUpdateOldDueRange';
 import formatUserStatus from './formatUserStatus';
 import getShade from './getShade';
 import getShortUserDescription from './getShortUserDescription';
@@ -44,6 +46,8 @@ export {
     formatShortVisibility,
     formatTicketDueRange,
     formatTicketPriority,
+    formatTicketUpdateNewDueRange,
+    formatTicketUpdateOldDueRange,
     formatUserStatus,
     getShade,
     getShortUserDescription,
