@@ -1,3 +1,4 @@
+import calculateDueRangeInMinutes from './calculateDueRangeInMinutes';
 import conjoinWithCommasAndWord from './conjoinWithCommasAndWord';
 import coreColors from './coreColors';
 import fillInFormFieldDefaults from './fillInFormFieldDefaults';
@@ -30,6 +31,7 @@ import transformFormFieldsForSaving from './transformFormFieldsForSaving';
 import validateFormFields from './validateFormFields';
 
 export {
+    calculateDueRangeInMinutes,
     conjoinWithCommasAndWord,
     coreColors,
     fillInFormFieldDefaults,

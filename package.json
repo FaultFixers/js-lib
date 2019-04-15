@@ -1,8 +1,8 @@
 {
   "name": "faultfixers-js-lib",
-  "version": "0.0.34",
+  "version": "0.0.35",
   "dependencies": {
-    "local-date-time": "^0.0.9",
+    "local-date-time": "^0.0.11",
     "values.js": "^1.0.3"
   },
   "devDependencies": {
