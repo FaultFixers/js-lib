@@ -7,6 +7,7 @@ import formatAssetWarrantyStatus from './formatAssetWarrantyStatus';
 import formatDueRange from './formatDueRange';
 import formatFormInstanceStatus from './formatFormInstanceStatus';
 import formatFormTemplateStatus from './formatFormTemplateStatus';
+import formatInvoiceStatus from './formatInvoiceStatus';
 import formatLocalDate from './formatLocalDate';
 import formatLocalDateTime from './formatLocalDateTime';
 import formatLocalTime from './formatLocalTime';
@@ -40,6 +41,7 @@ export {
     formatDueRange,
     formatFormInstanceStatus,
     formatFormTemplateStatus,
+    formatInvoiceStatus,
     formatLocalDate,
     formatLocalDateTime,
     formatLocalTime,
