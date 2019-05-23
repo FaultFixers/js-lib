@@ -1,6 +1,7 @@
 import calculateDueRangeInMinutes from './calculateDueRangeInMinutes';
 import conjoinWithCommasAndWord from './conjoinWithCommasAndWord';
 import coreColors from './coreColors';
+import escapeHtmlChars from './escapeHtmlChars';
 import fillInFormFieldDefaults from './fillInFormFieldDefaults';
 import formatAssetStatus from './formatAssetStatus';
 import formatAssetWarrantyStatus from './formatAssetWarrantyStatus';
@@ -35,6 +36,7 @@ export {
     calculateDueRangeInMinutes,
     conjoinWithCommasAndWord,
     coreColors,
+    escapeHtmlChars,
     fillInFormFieldDefaults,
     formatAssetStatus,
     formatAssetWarrantyStatus,

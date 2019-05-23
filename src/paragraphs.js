@@ -1,11 +1,4 @@
-const HTML_ESCAPES = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    '\'': '&#39;',
-    '`': '&#96;',
-};
+import escapeHtmlChars from './escapeHtmlChars';
 
 function paragraphs(text) {
     if (typeof text !== 'string') {
@@ -17,9 +10,7 @@ function paragraphs(text) {
         return '';
     }
 
-    for (let key in HTML_ESCAPES) {
-        altered = altered.replace(new RegExp(key, 'g'), HTML_ESCAPES[key]);
-    }
+    altered = escapeHtmlChars(altered);
     altered = `<p>${altered}</p>`;
     altered = altered.replace(/\n{2,}/g, '</p><p>');
     altered = altered.replace(/\n/g, '<br />');
