@@ -25,6 +25,7 @@ import getShortUserDescription from './getShortUserDescription';
 import getTicketCommentVisibilityDescription from './getTicketCommentVisibilityDescription';
 import getTint from './getTint';
 import getUserDescription from './getUserDescription';
+import hasAnyBillingPermission from './hasAnyBillingPermission';
 import hasAnyTicketUpdatePermission from './hasAnyTicketUpdatePermission';
 import money from './money';
 import paragraphs from './paragraphs';
@@ -60,6 +61,7 @@ export {
     getTicketCommentVisibilityDescription,
     getTint,
     getUserDescription,
+    hasAnyBillingPermission,
     hasAnyTicketUpdatePermission,
     money,
     paragraphs,
