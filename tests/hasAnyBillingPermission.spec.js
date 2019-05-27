@@ -12,23 +12,23 @@ describe('hasAnyBillingPermission', function() {
         expect(hasAnyBillingPermission(permissions)).to.equal(false);
     }
 
-    it('if should return true for BILLING_MANAGE_SETTINGS', function() {
+    it('should return true for BILLING_MANAGE_SETTINGS', function() {
         expectTrue('BILLING_MANAGE_SETTINGS');
     });
 
-    it('if should return true for BILLING_MANAGE_RATE_CARD', function() {
+    it('should return true for BILLING_MANAGE_RATE_CARD', function() {
         expectTrue('BILLING_MANAGE_RATE_CARD');
     });
 
-    it('if should return true for BILLING_DRAFT_INVOICES', function() {
+    it('should return true for BILLING_DRAFT_INVOICES', function() {
         expectTrue('BILLING_DRAFT_INVOICES');
     });
 
-    it('if should return true for BILLING_SEND_INVOICES', function() {
+    it('should return true for BILLING_SEND_INVOICES', function() {
         expectTrue('BILLING_SEND_INVOICES');
     });
 
-    it('if should return false for other permissions', function() {
+    it('should return false for other permissions', function() {
         expectFalse('VIEW_ACCOUNTS');
         expectFalse('VIEW_ACCOUNTS', 'UPDATE_ACCOUNTS');
     });
