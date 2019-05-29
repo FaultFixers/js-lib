@@ -5,7 +5,7 @@ const BILLING_PERMISSIONS = [
     'BILLING_SEND_INVOICES',
 ];
 
-function hasAnyBillingPermission(permissions) {
+function hasAnyBillingOrInvoicingPermission(permissions) {
     if (!permissions) {
         return false;
     }
@@ -19,4 +19,4 @@ function hasAnyBillingPermission(permissions) {
     return false;
 }
 
-export default hasAnyBillingPermission;
+export default hasAnyBillingOrInvoicingPermission;

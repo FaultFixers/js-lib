@@ -1,15 +1,15 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const hasAnyInvoicePermission = require('../dist/test-bundle.js').hasAnyInvoicePermission;
+const hasAnyInvoicingPermission = require('../dist/test-bundle.js').hasAnyInvoicingPermission;
 
-describe('hasAnyInvoicePermission', function() {
+describe('hasAnyInvoicingPermission', function() {
     function expectTrue(...permissions) {
-        expect(hasAnyInvoicePermission(permissions)).to.equal(true);
+        expect(hasAnyInvoicingPermission(permissions)).to.equal(true);
     }
 
     function expectFalse(...permissions) {
-        expect(hasAnyInvoicePermission(permissions)).to.equal(false);
+        expect(hasAnyInvoicingPermission(permissions)).to.equal(false);
     }
 
     it('should return true for BILLING_DRAFT_INVOICES', function() {
