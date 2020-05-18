@@ -2,7 +2,9 @@
   "name": "faultfixers-js-lib",
   "version": "0.0.40",
   "dependencies": {
+    "acorn": ">=7.2.0",
     "local-date-time": "^0.0.11",
+    "minimist": ">=1.2.5",
     "values.js": "^1.0.3"
   },
   "devDependencies": {
